@@ -1,0 +1,145 @@
+.btn{
+    color: orange;
+    border-color: orange;
+    background-color: orange;
+}
+.navbar-right{
+    padding-right: 20px;
+}
+.navbar-item{
+    padding: 20px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+.website_header{
+    text-align: center;
+}
+.header-bold{
+    font-weight: bolder;
+    font-style: italic;
+}
+.header-text{
+    font-weight: 100;
+}
+.footer-row{
+    padding-top: 20px;
+    padding-left: 180px;
+    color: white;
+}
+.footer-links{
+    list-style-type: none;
+    padding: 0px 0px 30px 0px;
+    margin: 0px;
+}
+.footer-item{
+    padding-top: 10px;
+}
+.footer-item a{
+    text-decoration: none;
+    color: inherit;
+}
+.footer-item a:hover{
+    color: grey;
+}
+.socials{
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.socials-icon{
+    padding-top: 10px;
+    padding-left: 35px;
+}
+.newsletter{
+    color: white;
+    border: 2px solid white;
+    padding: 5px 25px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    margin-left: 115px;
+    margin-right: 115px;
+}
+.newsletter a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+.newsletter a:hover{
+    color: grey;
+}
+.navbar{
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.navbar-right{
+    padding-right: 20px;
+}
+.navbar-item{
+    padding: 20px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+.navbar-left{
+    display: inline-flex;
+}
+.search-box{
+    position: relative;
+    top: 6px;
+    left: 10px;
+    background-color: orange;
+    height: 43px;
+    border-radius: 40px;
+    padding: 10px;
+}
+.search-box:hover > .search-txt{
+    width: 230px;
+}
+.search-btn{
+    color: orange;
+    float: right;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -7px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    width: 0px;
+    height: 20px;
+}
+.profile_name{
+    padding-left: 55px;
+}
+.assess_text{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.magic{
+    color: orange;
+    font-size: 50px;
+    font-family: 'Satisfy', cursive;
+    text-transform: none;
+}
+.socialicons-row{
+    position: relative;
+    right: 20px;
+}
