@@ -119,6 +119,10 @@
     text-decoration: none;
     color: inherit;
 }
+.sub-menu li a:hover{
+    font-weight: 800;
+    color: orange;
+}
 .sub-menu{
     background: white;
     line-height: 50px;
@@ -137,7 +141,7 @@
 .tools-sub-menu{
     position: absolute;
     top: 70px;
-    left: 90%;
+    left: 85%;
     display: none;
 }
 .open-menu{
