@@ -143,3 +143,42 @@
     position: relative;
     right: 20px;
 }
+.people-arrow,
+.tools-arrow{
+    transition: all 0.3s ease;
+}
+.navbar-item:hover .people-arrow,
+.navbar-item:hover .tools-arrow{
+    transform: rotate(180deg);
+}
+.sub-menu li{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.sub-menu li a{
+    text-decoration: none;
+    color: inherit;
+}
+.sub-menu{
+    background: white;
+    line-height: 50px;
+    list-style-type: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.people-sub-menu{
+    position: absolute;
+    top: 70px;
+    left: 70%;
+    display: none;
+}
+.tools-sub-menu{
+    position: absolute;
+    top: 70px;
+    left: 76%;
+    display: none;
+}
+.open-menu{
+    display: block;
+}

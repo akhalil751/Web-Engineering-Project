@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="/Images/logo.png">
     <link rel="stylesheet" href="stylesheet-home.css">
     <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/50c951c3e7.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -23,8 +24,19 @@
         </div>
         <div class="navbar-right">
             <a class="navbar-item" href="profile.html">Profile</a>
-            <a class="navbar-item" href="blankpage alt.html">People</a>
-            <a class="navbar-item" href="blankpage.html">Tools</a>
+            <a class="navbar-item peoplebtn" href="blankpage alt.html" onmouseover="togglePeopleMenu()">People <i class='bx bx-chevron-down people-arrow'></i></a>
+            <ul class="people-sub-menu sub-menu" id="peoplesubmenu" onmouseleave="togglePeopleMenu()">
+                <li><a href="#">Teams</a></li>
+                <li><a href="#">Coworkers</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Candidates</a></li>
+            </ul>
+            <a class="navbar-item toolsbtn" href="blankpage.html" onmouseover="toggletoolsMenu()">Tools <i class='bx bx-chevron-down tools-arrow'></i></a>
+            <ul class="tools-sub-menu sub-menu" id="tools-submenu" onmouseleave="toggletoolsMenu()">
+                <li><a href="#">Chrome Extension</a></li>
+                <li><a href="#">Quick Tips</a></li>
+                <li><a href="#">Writing Assistant</a></li>
+            </ul>
             <a class="btn btn-outline-primary btn-sm navbar-item" href="registerpage.html">REGISTER NOW FOR FREE</a>
         </div>
     </div>
@@ -119,5 +131,15 @@
         </div>
         <br>
     </div>
+    <script type = "text/javascript">
+        var peopleMenu = document.getElementById("peoplesubmenu");
+        var toolsMenu = document.getElementById("tools-submenu");
+        function togglePeopleMenu(){
+            peopleMenu.classList.toggle("open-menu");
+        }
+        function toggletoolsMenu(){
+            toolsMenu.classList.toggle("open-menu");
+        }
+    </script>
 </body>
 </html>
