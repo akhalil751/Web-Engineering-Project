@@ -174,13 +174,13 @@
 .people-sub-menu{
     position: absolute;
     top: 70px;
-    left: 70%;
+    left: 64%;
     display: none;
 }
 .tools-sub-menu{
     position: absolute;
     top: 70px;
-    left: 76%;
+    left: 72%;
     display: none;
 }
 .open-menu{

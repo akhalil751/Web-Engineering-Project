@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(empty($_SESSION['email'])){
+    header('Location: loginpage.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,6 +64,9 @@
             </div>
         </div>
         <div class="row footer_row">
+            <form action="logout.php" method="post">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="logout">Logout</button>
+            </form>
             <a href="test.html" class="button">TAKE TEST</a>
         </div>
     </div>

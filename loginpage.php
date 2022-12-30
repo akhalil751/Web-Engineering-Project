@@ -29,18 +29,26 @@
     <div class="container">
         <h1 >Login</h1>
     <hr>
-    <form action="">
+    <form action="login.php" method="post">
         <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+        <input type="text" placeholder="Enter Email" name="email" id="email" required value="<?php
+        if(isset($_COOKIE['email'])){
+          echo $_COOKIE['email'];
+        }
+        ?>">
     
         <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+        <input type="password" placeholder="Enter Password" name="psw" id="psw" required value="<?php
+      if(isset($_COOKIE['password'])){
+        echo $_COOKIE['password'];
+      }
+      ?>">
     
         Remember Me &nbsp;
-        <input type="checkbox" name="rememberme" id="rememberme">
+        <input type="checkbox" name="remember_checkbox" id="rememberme">
         <hr>
     
-        <button type="submit" class="loginbtn" id="loginbtn" onclick="Validate()">login</button>
+        <button type="submit" class="loginbtn" id="loginbtn" name="login" onclick="Validate()">login</button>
     </form>    
     </div>
     <script type = "text/javascript">

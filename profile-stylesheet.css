@@ -135,13 +135,13 @@
 .people-sub-menu{
     position: absolute;
     top: 70px;
-    left: 83%;
+    left: 80%;
     display: none;
 }
 .tools-sub-menu{
     position: absolute;
     top: 70px;
-    left: 85%;
+    left: 84%;
     display: none;
 }
 .open-menu{
@@ -149,4 +149,8 @@
 }
 .close-menu{
     display: none;
+}
+button{
+    margin-top: 100px;
+    margin-left: 70px;
 }
